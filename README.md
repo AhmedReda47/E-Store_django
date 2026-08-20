@@ -1,13 +1,65 @@
-# Djackets | Django
+# E-Store — Full-Stack E-Commerce Platform
 
-Learn how to build an e-commerce website using Django and Vue
+A full-stack e-commerce application built with Django REST Framework and Vue.js.
 
-This repository is a part of a video tutorial on my YouTube channel: Code With Stein
+The application provides product browsing, categories, authentication, shopping cart management, order processing, and Stripe payment integration.
 
-My channel:
-[CodeWithStein](https://www.youtube.com/channel/UCfVoYvY8BfTDeF63JQmQJvg/?sub_confirmation=1)
+## Features
 
-## Author
-This repository and video is created by CodeWithStein. Check out my website for more information.
+### Customer Features
 
-[Code With Stein - Website](https://codewithstein.com)
+- Browse products and categories
+- View product details
+- Add products to cart
+- Update product quantities
+- Remove products from cart
+- User registration and authentication
+- Place orders
+- Stripe payment integration
+- View order information
+
+### Backend Features
+
+- RESTful API built with Django REST Framework
+- Product and category management
+- Order and order-item management
+- User authentication
+- Token-based authentication
+- CORS configuration
+- Stripe payment integration
+
+## Technologies
+
+### Frontend
+
+- Vue.js
+- JavaScript
+- Vue Router
+- Axios
+- HTML5
+- CSS3
+
+### Backend
+
+- Python
+- Django
+- Django REST Framework
+- Djoser
+- Django CORS Headers
+- Stripe API
+
+### Database
+
+- SQLite for local development
+
+## Project Structure
+
+```text
+E-Store_django/
+├── djackets_django/
+├── product/
+├── order/
+├── manage.py
+├── requirements.txt
+├── .gitignore
+└── README.md
