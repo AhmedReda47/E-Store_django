@@ -32,6 +32,11 @@ ALLOWED_HOSTS = os.environ.get(
     'localhost,127.0.0.1'
 ).split(',')
 
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://e-store-django.onrender.com",
+]
+
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 
 # Application definition
@@ -55,8 +60,8 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
+    "https://e-store-django.onrender.com",
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
