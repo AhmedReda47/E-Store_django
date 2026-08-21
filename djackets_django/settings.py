@@ -60,7 +60,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
-    "https://e-store-django.onrender.com",
+    "https://e-store-vue.vercel.app",
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
