@@ -21,25 +21,14 @@ class ProductSerializer(serializers.ModelSerializer):
 
     def get_image(self, obj):
         if obj.image:
-            request = self.context.get("request")
-            return request.build_absolute_uri(obj.image.url)
-
+            return obj.image.url
         return ""
 
     def get_thumbnail(self, obj):
         if obj.thumbnail:
-            request = self.context.get("request")
-            return request.build_absolute_uri(obj.thumbnail.url)
-
-        if obj.image:
-            obj.thumbnail = obj.make_thumbnail(obj.image)
-            obj.save()
-
-            request = self.context.get("request")
-            return request.build_absolute_uri(obj.thumbnail.url)
+            return obj.thumbnail.url
 
         return ""
-
 
 class CategorySerializer(serializers.ModelSerializer):
     products = ProductSerializer(many=True)
